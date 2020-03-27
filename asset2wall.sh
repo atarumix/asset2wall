@@ -2,7 +2,7 @@
 minimum=204800 #
 minwidth=1200
 destdir=/mnt/c/var/lib/wall
-if [ -f ${destdir} ]; then
+if [ ! -d ${destdir} ]; then
   mkdir -p ${dsstdir}
 fi
 pushd /mnt/c/Users/${LOGNAME}/AppData/Local/Packages/Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy/LocalState/Assets
